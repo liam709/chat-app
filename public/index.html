@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>My Chat App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js" integrity="sha512-2RDFHqfLZW8IhPRvQYmK9bTLfj/hddxGXQAred2wNZGkrKQkLGj8RCkXfRJPHlDerdHHIzTFaahq4s/P4V6Qig==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My Chat App</h1>
+    <form action="">
+        <div id="chat-window">
+            <input type="text" id="chat-typing" disabled>
+            <div id="chat-container"></div>
+        </div>
+        <div id="msg-window">
+            <label for="txt-name">Name:</label>
+            <input type="text" id="txt-name">
+            <label for="txt-message">Text:</label>
+            <textarea id="txt-message" rows="10" placeholder="Type your text here"></textarea>
+            <button id="btn-send">Send</button>
+        </div>
+        
+    </form>
+    <script src="/chat.js"></script>
+
+</body>
